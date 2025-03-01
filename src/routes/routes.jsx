@@ -3,11 +3,19 @@ import { Routes, Route } from "react-router";
 import NotFound from "../pages/not-found";
 import ProtectRoute from "./ProtectRoute";
 import Login from "../pages/login";
+import Landing from "../pages/landig";
 
 function RoutesHandler() {
   return (
     <Routes>
-      <Route index element={<ProtectRoute>index /</ProtectRoute>} />
+      <Route
+        index
+        element={
+          <ProtectRoute>
+            <Landing />/
+          </ProtectRoute>
+        }
+      />
       <Route path="/login" element={<Login />} />
       <Route
         path="/numbers-in-image"
