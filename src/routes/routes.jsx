@@ -12,7 +12,7 @@ function RoutesHandler() {
         index
         element={
           <ProtectRoute>
-            <Landing />/
+            <Landing />
           </ProtectRoute>
         }
       />
